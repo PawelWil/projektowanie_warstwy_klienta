@@ -3,6 +3,9 @@
     atrybuty do wykorzystania:
         font-family: "Arial Narrow";
 */
+p, i {
+    font-family: "Arial Narrow";
+}
 
 
 /*
@@ -10,6 +13,11 @@
     atrybuty do wykorzystania:
         color: red;
 */
+#header {
+    color: red;
+}
+
+
 
 
 /*
@@ -17,8 +25,13 @@
     atrybuty do wykorzystania:
         height: 300px;
         background-color: grey;
-
 */
+.container {
+    height: 300px;
+    background-color: grey;
+}
+
+
 
 
 /*
@@ -26,6 +39,11 @@
     atrybuty do wykorzystania:
         color: white;
 */
+.container p {
+    color: white;
+}
+
+
 
 
 /*
@@ -33,6 +51,13 @@
     atrybuty do wykorzystania:
         font-size: 1.5em;
 */
+.container > p { /* za pomocą nawiasu ostergo wyciągamy dziecko dla paragrafu p*/
+    font-size: 1.5em;
+}
+
+
+
+
 
 
 /*
@@ -41,6 +66,13 @@
     background-color: navy;
     color: white;
 */
+.listHeader {
+    background-color: navy;
+    color: white;
+}
+
+
+
 
 
 /*
@@ -48,6 +80,13 @@
     atrybuty do wykorzystania:
     background-color: lightgrey;
 */
+.listHeader ~ .item {  /* wszyscy sąsiedzi to tylda ~ */
+  background-color: lightgrey;
+}
+
+
+
+
 
 
 /*
@@ -56,7 +95,9 @@
     background-color: aquamarine;
 */
 
-
+.listHeader + .item {
+    background-color: aquamarine;
+}
 
 
 

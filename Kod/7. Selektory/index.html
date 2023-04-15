@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektory</title>
+    <link rel="stylesheet" href="template.css">
+
+    <!--teraz wpisujemy nasze selektory-->
+    <style>
+       /* !*1. Selektor uniwersalny - wszystkie elementy(kwadraty) zostaną otoczone ramką + dodatkowo 'body' wktróym te wszystkie elemnty sa pochowane *!
+        * {  !* = wszystko*!
+            border: 1px solid red;
+        }*/
+
+       /*!*2. Selektor typu 'div'* - tu tez wszystkie kwadraty otoczone czeroną ramką!*!
+       div {
+           border: 3px solid red;
+       }*/
+
+     /*  !*3. Selektor kalsy boxes*!
+       .boxes {
+           border: 1px solid red;
+       }*/
+
+       /*4. Selektor Identyfikatora - tu obramuemy piewrszy elelmnt*/
+
+       #box-one {
+           border: 3px solid red;
+       }
+
+
+       /*!*5. Selektor elementu dziecka*!
+       #big-box > div {  !* tu otaczamy wszystkie lelemnty dzieci*!
+           border: 3px solid red;
+       }*/
+
+
+
+       /*6. Teraz wyciągmy wszystkich potomków czyli dzieci + dzieci dzieci (ten mały kwadrat) */
+       /*#big-box div {
+           border: 3px solid red;
+       }*/
+
+      /*!**7. Selektor elementu sasiadujacego bezposrednio*!
+      #box-two + div {
+          border: 3px solid red;
+      }*/
+
+       /*!**7. Selektor element sasiadujacego *!
+       #box-two ~ div {
+           border: 3px solid red;
+       }*/
+
+    </style>
+</head>
+<body>
+
+  <div id="box-one"></div>
+  <div class="boxes"></div>
+
+  <div id="big-box">
+      <div></div>
+      <div id="box-two">
+          <div></div>
+      </div>
+      <div></div>
+      <div class="boxes"></div>
+  </div>
+
+</body>
+</html>
