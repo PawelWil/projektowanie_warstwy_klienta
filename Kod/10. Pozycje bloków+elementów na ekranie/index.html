@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!--teraz ustawiamy styl containarów-->
+  <style>
+    .container {  /* do klasy container*/
+        width: 50%;
+        height: 500px;
+        border:  1px solid black;
+        margin: 20px auto;
+    }
+
+    .box {
+        height: 100px;
+        width: 200px;
+        background-color: orange;
+
+    }
+    .margin {
+        margin:  20px;
+    }
+
+    /* tu zmieniamy pozycje bloku relative*/
+    .relative {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+
+    .relative-container {
+        position: relative;
+    }
+
+    .absolute {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 20px;
+    }
+  </style>
+
+
+</head>
+<body>
+
+<!--stworzymy teraz 3 kontenery, w które bedziemy wpakowywac nasze elementy - tworzymy elementy div, które beda miały klase container-->
+
+<div class = "container">
+    <div class="box sticky"></div>
+</div>
+
+
+
+<!--ten container bedzie miał wewnatrz 3 pudełka - elelmnty blokowe div, o klasie box, o pozycji static-->
+<div class = "container ">
+    <div class="box margin">Static</div>
+    <div class="box margin relative">Relative</div>
+    <div class="box margin">Static</div>
+
+</div>
+
+
+
+
+<div class = "container relative-container">
+    <div class="box absolute" ></div>
+
+</div>
+
+<div class="box fixed"></div>
+
+
+</body>
+</html>
