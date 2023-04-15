@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #container { /*tu deklarujemy wielkośść kontenera, w którym będą zawarte elementy blokowe i elementy wewnątrzwierszowe. Ma on opłożenia auto i szer. 200 pikseli*/
+      margin: auto;
+      width: 200px;
+    }
+    .border { /*to jest obramowanie kontenera, który ma szer 1 piksel, jest linią stałą(nieprzerywaną) i koloru czerwonego*/
+        border:1px solid red;
+    }
+    #block1 { /* a tu dajemy kolory wypełnień dla elementów blokowych i elementów wewnątrz blokowych*/
+        background-color: gray;
+    }
+    #block2 {
+        background-color: green;
+    }
+    #inline1 {
+        background-color: orange;
+    }
+    #inline2 {
+        background-color: yellow;
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<!-- tworzymy zewnetrzne pudełko, dziki czemu zmniejszym yszreokokść i wewnatrz bedziemy porównywac Div i Span-->
+<!--jak dam 'lorem10' to automatycznie mi wypisze 10 słow, albo inną ilość słow, w zalezności jaką dam liczbe za lorem. Wazne lorem pisze z małej litery -->
+<div id="container">
+    <div id="block1" class="border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, incidunt?</div> <!--div to element blokowy - jak widać jak wyswietle tą stronę-->
+    <div id="block2" class="border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, natus!</div>
+    <span id="inline1" class="border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nulla!</span> <!--span to element wewnątrzwierszowy-wykorzystują tyle ile trzeba przestetrzeni i dopsowują się do wewnątrz - jak widać jak wyswietle tą stronę-->
+    <span id="inline2" class="border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, fuga.</span>
+<!-- teraz na bazie powyższego widać różniecę pomiędzy div (elemnt blokowy), a span (elemnt wewnątrz-wierszowy)-->
+<!--id dajemy po to, żeby mozna się było do tych elemnetów jakoś odnieść-->
+</div>
+
+</body>
+</html>

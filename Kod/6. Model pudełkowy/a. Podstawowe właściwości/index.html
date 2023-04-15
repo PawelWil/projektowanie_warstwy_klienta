@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {
+            margin: 0; /*wyrównanie do boków strony*/
+        }
+        #box1{
+        width: 100px; /*szerokosc na 100 pikseli*/
+        height: 100px; /*wysokosc na 100 pikseli*/
+          background-color: red; /*kolor na czerwono*/
+      }
+        #box2 {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            padding: 20px; /*przesunięcie wypełnienia, którym jest tekst: 'jakis tekst*/
+            background-color: green;
+            border: 3px solid orange /*obramowanie: szerokosc, styl:mamy ciagły, kolor*/
+
+        }
+
+        #box3 {
+            background-color: blue;
+            height: 100px;
+            margin: 50px;
+            width: 50%; /*50% dostępnej szerokości ekranu przeglądarki - nie ustawiamy szer. pikselowo, ale procentowo*/
+        }
+
+    </style>
+
 </head>
 <body>
+<!--tworzymy poudelko dla ktero zadeklarujemy rózne własciwosci-->
+  <div id="box1"> </div> <!-- pierwszy element blokowy div o id box1, który jest formatowany w powyżej, w 'head'-->
+
+  <div id="box2">Jakiś tekst</div> <!-- drugi element blokowy div o id box1, który ma wypełnienie 'Jakiś tekst'-->
+
+  <div id="box3"> </div> <!-- trzeci element blokowy div o id box1, który ma wypełnienie 'Jakiś tekst'-->
 
 </body>
 </html>
