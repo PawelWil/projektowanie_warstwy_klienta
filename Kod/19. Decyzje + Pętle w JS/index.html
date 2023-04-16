@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        <!--if-->
+        let n = 0 /*dodajemy zmienną n, która równa się 1*/
+        if (n > 0) {
+            console.log('Jest większa od zera') /* to nie spolnione bo nie jest wieksze od zero*/
+        } else if (n == 0) {
+            console.log('Jest równe zero')
+        } else { /* teraz dodajemy alternatywę 'else'*/
+            console.log('Jest mniejsze od zera')
+        }
+
+        /*switch*/
+        let m = 2;
+
+        switch (m) {
+            case 1: /* tu mamy wartość zmiennej 1*/
+                console.log('Jest równe 1');
+                break;
+            case 2: /* tu mamy wartość zmiennej 2*/
+                console.log('Jest równe 2');
+                break
+            default: /* tu mamy żadne rozwiązanie*/
+                console.log('Żadne z rozwiązań');
+                break
+        }
+
+
+        /*FOR - robimy pętle od 0 do 9*/
+        for (let i = 0; i < 10; i++) { /* i to jest zmienna, która może miec dowolna wartosc inicajlizujaćą, i<10, do keidy ma trwac iteracja, i++ co ma wykonac podczas iteracji*/
+            console.log(i);
+        }
+
+
+        /*ARRAY*/
+        let array = [1, 10, 30, 50];
+
+        for (let e of array) {
+            console.log(e)
+        }
+
+        /*WILE*/
+        let p = 10;
+        while (p < 15) {
+
+            console.log('Wykonanie pętli while')
+            p++;
+        }
+
+        /*do - while*/
+        let o = 20;
+        do {
+            console.log('Wywolanie pętli do-while')
+        } while (o > 30);
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
