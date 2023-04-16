@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <!Tworzymy formularz , do ktrorego bstworzymy api-->
+       <!--https://reqres.in/ -- tu mozemy sobie mozemy tesowac nasze strony na bazie działającego api, który -->
+       <!--korzystamy z end pointu 'post', gdzie zasymulujemy utworzenie  naszegoi uzytkownika > trza w niego kliknąć i mamy dane z jakich do komunikacji trzeba wykorzystać-->
+      <!--dajemy prawym myszki na 'create' + kopiuj link > który to wklejamy ponizej-->
+      <!--wiadomo, że jest to metoda 'post' więc tą daną też musimy dodać-->
+      <!--te rzeczy z resta 'Post'Create musimy wpisac jak ponize{
+    "name": "morpheus",
+    "job": "leader"
+     }-->
+ <!--teraz po tym wszystjkim te dane wysyłam na 'POST' i serwer umieszczony na https://reqres.in/api/users -- ale to sobie sprawdzam jak jestem na tej stronie po wciśnieciu F12
+ i wtedy te dane są widoczne-->
+
+  <form action = https://reqres.in/api/users method = "post">
+    <label for="name">Imię</label> <br>
+    <input id="name" type="text" name="name"> <br>
+
+    <label for="job">Stanowisko</label> <br>
+    <input id="job" type="text" name="job"> <br>
+
+    <button>Wyślij</button>
+
+  </form>
+
+
+
+</body>
+</html>
