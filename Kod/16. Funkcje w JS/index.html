@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <!--Tworzymy funkcję w JS-->
+
+  <script>
+    /*ta funkcja bedzie wyswietlala prosty tekst na konsoli za pomocą F12, na stronie internetowej!*/
+    function simpleFunction() {
+      console.log('Wywołana funkcja simpleFunction');
+    }
+    simpleFunction(); /* za pomocą simpleFunction, ta funkcja będzie widoczna na konsoli*/
+
+    /*teraz przekazujemy jakis parametr do funkcji*/
+    function  rewrite(text) {
+      console.log(text);
+    }
+    rewrite(('Jakiś przekazany tekst')) /*teraz tą funkcję wywołujemy. Jesli tego nie damy nic się nie pojawi!
+    Pod 'text' bedzie pokazane 'Jakiś przekazany tekst'*/
+
+    /*funkcja ktora sumuje dwie liczby*/
+    function sumOfTwo(a, b) {
+      let sum = a + b;/*deklarujemy zmienną sum, która ma się równać a+b - i tu bedziemy mieli wynik arytmetyczne*/
+      console.log(a + ' + ' + b + ' = ' + sum) /*tu bazie konkatenacji */
+    }
+
+    sumOfTwo(1,2); /*teraz wywołuejmy tą funkcję, która zsumuje nam 1 + 2 = 3*/
+
+/* teraz funkcja ktora coś zwraca, w tym przypadku string*/
+    function  functionWithReturn()  {
+      return 'Jakiś zwrócony tekst';
+    }
+    console.log(functionWithReturn())
+
+
+
+
+
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>

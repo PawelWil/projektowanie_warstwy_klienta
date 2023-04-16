@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <!--Tworzymy w JS obiekty, które będziemy przypisywać od razu do jakichś zmiennych, żeby te obiekty między sobą rozróżniać-->
+  <script>
+    let person = { /* ZMIENNA to person, a obiekt to poniższe*/
+      firstName: 'Jan', /*to są klucze, np ten o wratisci Jan*/
+      lastName: 'Kowalski',
+      introduce: function () {
+        console.log('Nazywam sie ' + this.firstName + ' ' + this.lastName) /*THIS OZNACZA, ZE Z TEGO OBIEKTU DAJ MI*/
+      },
+    }
+
+    person.introduce(); /* wyswietla nam w konsoli tą osobę*/
+
+    /*zmieniam imie*/
+    person.firstName = 'Adam';
+    person.introduce();
+
+
+
+    /* teraz wykrzystamy notacje konstruktora do tworzenia funkcji*/
+    function Car (brand1, model) { /* car = zmienna, zaś: brand1, model = obiekty*/
+      this.brand = brand1 + '<---'; /* do tych obeiektó będą przekzywne jakies wartości*/
+      this.model = model;
+
+        this.showDetails = function () { /* teraz pokazanie szczegółów*/
+          console.log('Car: ' + this.brand + ' ' + this.model)
+        };
+    }
+
+    /*zmienna która bedzie przetrzymyła konkretne auto = fiat*/
+    let fiat = new Car ('Fiat', '126p');
+    fiat.showDetails() /*teraz ta zmienna fiat pokaze swoje szczegóły pokazane na konsoli*/
+
+
+
+    /*ostatni sposób tworzenia obiektów, poprzez klase i metodę */
+       /*a. tworzymy teraz klase*/
+    class  House {
+        constructor(windows, doors) {
+            this.windows = windows;
+            this.doors = doors;
+        }
+
+        /*b. teraz dodajemy metodę*/
+        showDetails() {
+            console.log ('Dom ma: ' + this.windows + ' okien ' + this.doors + ' drzwi. ');
+        }
+    }
+
+    let house = new House(5, 2)/* teraz do powyzszego konstruktora przekazujemy dane, które będą się wyswietlać*/
+    house.showDetails(); /*i teraz nam wyswietli, ze ma 5 okien i 2 drzwi*/
+
+
+
+
+  </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
