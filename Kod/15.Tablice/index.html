@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!--Tworzymy tablice w skrypcie JS-->
+  <script>
+    /*ta tablica przechwuje same wartoscu numeryczne*/
+    let numerArray = [1, 2, 3];
+    /*ta tabl wszystkie wart tekstowe*/
+    let textArray = ['one', 'two', 'three'];
+    /*wart bools*/
+    let booleanArray = [true, false, true]
+    /*a tu miks*/
+    let mixArray = [1, 'two', true];
+
+
+    /*teraz je wyswietlamu na Consoli, czyli dajemy F12 na stronie internetowej*/
+    console.log('TablicanumerArray');
+    console.log(numerArray);
+
+    console.log('Tablica textArray');
+    console.log(textArray);
+
+    console.log('Tablica booleanArray');
+    console.log(booleanArray);
+
+    console.log('Tablica mixArray');
+    console.log(mixArray);
+
+    /*teraz wuciagamy jakas waryosc  atablicy za pomoca indeksu bitowego*/
+
+    console.log('Trzeci element z textArray');
+    console.log(textArray[2]); /*wyciagamy 3 elemnt, czyli na konsoli wyswietli nam wartosc three*/
+
+/*do jednej z tablic wpiszmy nową wartość - zamieniamy starą wartość na nową*/
+    console.log('Tablica numerArray po modyfikacji drugiego elementu');
+    numerArray[1] = 400; /*drugi elemnt to indeks 1, który zamieniamu na 400*/
+    numerArray[2] = 100;
+    console.log(numerArray);
+
+    /*przyklad zwrocenia jak nie ma jakiegs elementu*/
+    console.log('Element z tablicy numerArray spoza zakresu');
+    console.log(numerArray[-1]); /*tego elementu nie ma i widzimy, że konsola pokazała 'undefined'*/
+
+    /*teraz sprawdzamy, czy jest jakas wartosc w jakiejs tablicy, czy istnieje*/
+    console.log('Czy tablica numerArray zawiera wartość 1');
+    console.log(numerArray.includes(1)); /*tu za pomoca 'include' poszukujemy wartosci 1, a nie indeksu 1, czyli jest true bo mamy tą wartosc !*/
+
+    console.log('Czy tablica numerArray zawiera wartość 1000');
+    console.log(numerArray.includes(1000));/*tu jest False, bo wiadomo, że jej nie ma*/
+
+    /*teraz dodajemy jakis dodatkowy element do tablicy, za pomocą fukcji 'push'*/
+    console.log('Tablica numberArray po dodaniu elementu na koniec')
+    numerArray.push(100);  /*tu za pomocą push ddajemy wartosc 100*/
+    console.log(numerArray);
+
+    /*sprawdzamy jaki typ zmiennej ma nasza tablica, za pomocą funkcji 'typeof' */
+    console.log('Typ zmiennej numberArray');
+    console.log(typeof numerArray)
+
+    /*ile ma elementów tablica, za pomocą polecenia 'length'*/
+    console.log('Liczba elementów tablicy numberArray')
+    console.log(numerArray.length);
+
+
+  </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
