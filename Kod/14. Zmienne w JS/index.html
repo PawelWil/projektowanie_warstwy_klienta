@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!--!!! KONSOLA to ta cześć któa się uruchamia już w przeglądarce za pomocą F12 i widzimy co zostało tam wyswietlone!!! -->
+
+  <!--w seekcji skrypt twoerzymy tu nasz kod JS-->
+  <script>
+    let numericVal = -5; /*zmienna numericVal, która przechwuje wartość -5*/
+    let stringVal = 'Tekst'; /*zmienna stringVal, która przechwuje tekst*/
+    let booleanVal = true; /*zmienna typu boolinowego, która przyjmuje wartosc true*/
+
+    /*teraz te dane idą na konsolę*/
+    console.log(numericVal);
+    console.log(stringVal);
+    console.log(booleanVal);
+
+    console.log('-----------------------------------------');
+/* za pomocą F12, na stronie internetwowej wyswietlamy jaki to typ zmiennej*/
+    console.log(typeof numericVal);
+    console.log(typeof stringVal);
+    console.log(typeof booleanVal);
+
+    console.log('-----------------------------------------');
+
+    numericVal = 'Nowa wartość';
+    console.log(numericVal);
+    console.log(typeof numericVal);
+
+
+    console.log('-----------------------------------------');
+/*działanie dodawania*/
+
+    let sum = '1' + 1; /*pierwsze 1 to teks, zas drugie 1 to numer - zwroci nam string 11, bo została uzyta konkatenacja, gdzie to 1 numerow przerzuciła na stringa,
+    a to dlatego bo jest mozliwe dodawanie=arytmetyka + konkatenacja, czyli są dwa wybory i system z defaultu, jak jawnie nie zrzutujemy przyjmuje konkatenacje --
+    jawne rzutowanie mam na mysli, że muszą być jasno wpisane jedynki, jako numery, a nie ze system się bedzie domyslal*/
+    console.log(sum);
+
+    let diff = '1' - 1; /* teraz wynik 0, bo nastąpiła konwersja w drugą stronę, przy odejmowaniu nie ma mowy o konkatencaji, dlaczego z automatu 1 tekstowe, zostało zamienioe na liczbę*/
+    console.log(diff);
+
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>
