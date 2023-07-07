@@ -5,5 +5,9 @@ b. przechodzenie miedzy oknami: alt 1
 c. skrót do komentarzy: ctr + / --> nowy komentarz lub zakomentowanie już istniejącej linii kodu
 c'.skrót do komenatarzy, ale już do istniejącego tekstu: ctr + / (kursor musi być w linii tego tekstu-obojętnie, w którym miejscu)
 d. z której przegldarki otwiera się strona: alt + F2(przycisk funkcyjny)
+lub najezdzamy na aktywną linię kodu, i wtedy się podświetlą możliwe przeglądarki (najlepsza Firefox)
 e. przeskakujemy miedzy projektami : alt + strzałka w lewo lub prawo,
 f. zmiana wszystkich elementów za jednym razem: sift + F6 (i wybieramy:.. ) - coś mi nie działa..
+g. szybkie tworzenie linii kodu: np. ze znacznikiem 'a': zjezdzam na pustą linię -> wpisuję 'a' -> wyswietla się rozwinięcie
+znaczników -> nie przechodzę na to 'a', ale daję tylko 'tab' -> i teraz cała gotowa linia kodu z Href mi się wyświetli,
+którą oczywiście dalej musze obrobić.

@@ -60,28 +60,48 @@ wpisujemy tekst, obraz itd., które się mają pojawić na stronie int.+ znaczni
     <title>Title</title>
 </head>
 <body>
-<!--I. Tworzymy znaczniki-->
+<!--I. Tworzymy znaczniki definiujące linki na stronie.
+znacznik definiujący link na stronie to znacznik <a>, zaś Atrybut 'href' to skrót od ang. hypertext reference
+– określamy tutaj adres dokumentu HTML/linku, do którego hiperłącze ma prowadzić-->
 <!--LINKI-->
   <!--1 sposób, który jest wolny -- to za href to gdzie się otworzy, a potem nazwa strony
   * w cudzysłowiu, mamy nazwę pliku/linku, do którego nastąpi przekierowanie, czyli w poniższym przypadku, przeniesie nas
   do strony google.
-  W poniższym przypadku, na stronie się pojawi nazwa 'Link do strony google', ktory za pomocą linka podanego obok w cudzysłowiu
-  przeniesie nas do strony google.
+  W poniższym przypadku, na stronie się pojawi zawartość naszego znacznika, czyli 'Link do strony google',
+  ktory za pomocą linka podanego obok w cudzysłowiu przeniesie nas do strony google.
   -->
     <a href="https://google.com">Link do strony google</a> <br>
 
 
 <!--alt + F2 - to otwiera nam przeglądarke, za pomoca ktorej przejrzymy tą nasza stwoarzoną stronę-->
 
-  <!--2 sposób, który jest szybszy i otwieramy z tego pliku 'index' kod z pliku innego, czyli w naszym przypadku 'second'-->
+  <!--2 sposób, który jest szybszy i otwieramy z tego pliku 'index' kod z pliku innego, czyli w naszym przypadku 'second',
+który zostal przez nas stworzony - to jest punkt 1.LINK HTML + PODSTAWY
+Ale szybszy dlatego bo jest szybkie tworzenie linii kodu/jego sposób wykonania: np. ze znacznikiem 'a': zjezdzam na pustą linię -> wpisuję 'a' -> wyswietla się rozwinięcie
+znaczników -> nie przechodzę na to 'a', ale daję tylko 'tab' -> i teraz cała gotowa linia kodu z Href mi się wyświetli,
+którą oczywiście dalej musze obrobić.
+-->
     <a href="second.html">Link do second.html</a> <br>
+
 
   <!--tu zmienimy zawartość tego trzeciego odnośnika-->
     <a href="https://google.com" target="_blank">Link otwierający się w nowej karcie</a> <br>
 
+<!--Atrybut target
 
+Hiperłącze może także posiadać atrybut target (ang. cel), który określa gdzie docelowo w przeglądarce ma trafić
+podlinkowany dokument:
+<a href="http://pasja-informatyki.pl" target="_blank">Pasja informatyki</a>
+Możliwe wartości atrybutu target są następujące:
+    target="_self" – otwórz stronę w tej samej karcie/ramce , w której znajduje się link (ponieważ jest to zachowanie domyślne, można ten atrybut pominąć),
+    target="_blank" – otwórz witrynę w nowej, nieużywanej karcie przeglądarki-->
 </body>
 </html>
+
+
+
+
+
 
 
 
