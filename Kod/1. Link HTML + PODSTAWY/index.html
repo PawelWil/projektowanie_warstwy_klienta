@@ -1,12 +1,35 @@
 <!DOCTYPE html>
+<!--skrót do komentarzy: ctr + / &ndash;&gt; nowy komentarz lub zakomentowanie już istniejącej linii kodu-->
+<!--z której przegldarki otwiera się strona: alt + F2(przycisk funkcyjny)-->
 <!--W zakładce 'Prezentacja', która znajduje się poniżej jest załączona prezentacja pokazywana przez Sebastiana
 !! Warto o tym pamiętać, bo jest tam  dużo fajnych informacji!! -->
 <!--tak się tworzy komentarz. - skrót: ctr + /-->
 <!--zapisywanie linii od nowej linii, robimy za pomocą polecenia: <br>-->
 <!--żeby jakąś linię kodu zakomentować, to robię: zaznaczam całą tą linię kodu -> daje ctrl+shift+/-->
-<!-- pomiędzy head mamy kod strony i jej tytuł-->
-<!-- pomiędzy body, będziemy mieć treść wyświetlanej strony, która się następnie będzie wyświetlała w przeglądarce-->
-<!--DOCTYPE html nie jest obowiązkowy, ale on odnosi się do dokumentw typu HTML-->
+
+<!-- STRUKTURA STRONY INTERNETOWEJ:
+1. Zaczynamy od <!DOCTYPE html>, który nie jest obowiązkowy, ale on odnosi się do dokumentw typu HTML
+2. Następnie dajemy znaczniki  HTML, w których to cała struktura strony internetowej się schowa: <HTML>..całość strony
+internetowej.., czyli znaczniki HEAD i BODY</HTML>
+* Zawsze pamiętać trzeba, że znacznik HTML jest rodzicem, a znaczniki które są w nim zawarte(Head i Body) to dzieci,
+więc muszą one mieć takie same wcięcia względem znacznika HTML.
+3. Czyli, następnie znacznik HEAD - pomiędzy HEAD mamy kod strony i jej tytuł: <head>..kod, tytuł..</head>
+4. I teraz następny znacznik, to BODY, będziemy mieć treść wyświetlanej strony, która się następnie będzie wyświetlała
+się w przeglądarce, jako widoczna
+5. Poniżej taka prosta pełna struktura strony HTML:
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pierwsza strona</title> (* to jest title strony, który jest widoczny u góry w karcie przeglądarki)
+  </head>
+
+  <body>
+    Jakiś tekst...
+  </body>
+</html>
+
+
+-->
 <!-- Znacznik otwierający: <tu wpisujemy typ znacznika, np. head albo body itd.> za znacznikiem otwierającym i zamykającym,
 wpisujemy tekst, obraz itd., które się mają pojawić na stronie int.+ znacznik zamykający:</typ znacznika, np. head albo body>-->
 <!--ZNACZNIKI SAMODOMYKAJĄCE, czyli takie, które wystarczy wpisać, i HTML wie co dalej robić, np. nowa linia itd.
@@ -19,7 +42,11 @@ wpisujemy tekst, obraz itd., które się mają pojawić na stronie int.+ znaczni
 -->
 <!--INNE POPULARNE ZNACZNIKI:
  -- <title> wpisuje tytuł naszej strony, ale to żeby była  jasność jest nazwa zakładki, nie jakiś tekst już na stronie,
- czyli np. 90minut to jest nazwa nadana poprzez ten znacznik</title> - robię to w znaczniku/sekcji <head>.
+ czyli np. 90minut to jest nazwa nadana poprzez ten znacznik</title> - robię to w znaczniku/sekcji <head>.,
+ np. <i title = "90minut">Tekst</i>, gdzie:
+         * 'i' to znaczy że tytuł będzie pisany w kursywie(tekst pochyły)
+         * 'title', to jest nazwa atrybutu (będziemy mieli wiele innych nazw atrybytów),
+         * 'tytuł', to jest wartość atrybutu
  -- <body>
          wpisuje jakiś tekst, który będzie widoczny na stronie internetowej
     </body>
@@ -34,8 +61,16 @@ wpisujemy tekst, obraz itd., które się mają pojawić na stronie int.+ znaczni
 </head>
 <body>
 <!--I. Tworzymy znaczniki-->
-  <!--1 sposób, który jest wolny -- to za href to gdzie się otworzy, a potem nazwa strony-->
+<!--LINKI-->
+  <!--1 sposób, który jest wolny -- to za href to gdzie się otworzy, a potem nazwa strony
+  * w cudzysłowiu, mamy nazwę pliku/linku, do którego nastąpi przekierowanie, czyli w poniższym przypadku, przeniesie nas
+  do strony google.
+  W poniższym przypadku, na stronie się pojawi nazwa 'Link do strony google', ktory za pomocą linka podanego obok w cudzysłowiu
+  przeniesie nas do strony google.
+  -->
     <a href="https://google.com">Link do strony google</a> <br>
+
+
 <!--alt + F2 - to otwiera nam przeglądarke, za pomoca ktorej przejrzymy tą nasza stwoarzoną stronę-->
 
   <!--2 sposób, który jest szybszy i otwieramy z tego pliku 'index' kod z pliku innego, czyli w naszym przypadku 'second'-->
@@ -47,3 +82,9 @@ wpisujemy tekst, obraz itd., które się mają pojawić na stronie int.+ znaczni
 
 </body>
 </html>
+
+
+
+
+
+
